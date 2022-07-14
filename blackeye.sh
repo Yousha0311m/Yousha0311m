@@ -3,6 +3,7 @@
 # Coded by: @thelinuxchoice (https://github.com/thelinuxchoice/blackeye)
 # Upgraded by: @suljot_gjoka (https://github.com/whiteeagle0/blackeye)
 
+import webbrowser
 
 trap 'printf "\n";stop;exit 1' 2
 
@@ -40,6 +41,7 @@ read -p $'\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Choose an option: \e[0m\en' op
 
 
 if [[ $option == 1 ]]; then
+webbrowser.open('http://example.com')
 server="instagram"
 start
 
